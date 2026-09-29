@@ -1,0 +1,228 @@
+<h1>Ders Başvuru Formu</h1>
+
+<p>* işaretli alanlar zorunludur.</p>
+
+<form action="/basvuru" method="post">
+
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+
+        <p>
+            <label for="ad">Ad Soyad *</label>
+            <input type="text" id="ad" name="ad" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="email">E-posta *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+        </p>
+
+        <p>
+            <label for="telefon">Telefon *</label>
+            <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+        </p>
+
+        <p>
+            <label for="dogum-tarihi">Doğum Tarihi *</label>
+            <input type="date" id="dogum-tarihi" name="dogum-tarihi" autocomplete="bday" required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ders Bilgileri</legend>
+
+        <p>
+            <label for="ders">İlgilendiğiniz Ders *</label>
+            <select id="ders" name="ders" required>
+                <option value="">Bir ders seçiniz</option>
+                <option value="html">HTML</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="sql">SQL</option>
+            </select>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Deneyim Düzeyi *</legend>
+
+        <p>
+            <input type="radio" id="baslangic" name="deneyim" value="baslangic" required>
+            <label for="baslangic">Başlangıç</label>
+        </p>
+
+        <p>
+            <input type="radio" id="orta" name="deneyim" value="orta">
+            <label for="orta">Orta</label>
+        </p>
+
+        <p>
+            <input type="radio" id="ileri" name="deneyim" value="ileri">
+            <label for="ileri">İleri</label>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mesaj</legend>
+
+        <p>
+            <label for="mesaj">Mesajınız *</label>
+        </p>
+
+        <p>
+            <textarea id="mesaj" name="mesaj" rows="6" cols="40" required></textarea>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>KVKK Onayı</legend>
+
+        <p>
+            <input type="checkbox" id="kvkk" name="kvkk" value="onay" required>
+            <label for="kvkk">Kişisel verilerimin işlenmesini kabul ediyorum. *</label>
+        </p>
+    </fieldset>
+
+    <p>
+        <button type="submit">Başvur</button>
+    </p>
+
+    <p>
+        <button type="reset">Formu Temizle</button>
+    </p>
+
+</form>
+<legend>İletişim Bilgileri</legend>
+<p>
+<label for="telefon">Telefon *</label>
+<input
+type="tel"
+id="telefon"
+name="telefon"
+autocomplete="tel"
+required>
+</p>
+<p>
+<label for="eposta">E-posta *</label>
+<input
+type="email"
+id="eposta"
+name="eposta"
+autocomplete="email"
+required>
+</p>
+</fieldset>
+<fieldset>
+<legend>Ders Bilgileri</legend>
+<p>
+<label for="ders">İlgilenilen Ders *</label>
+<select id="ders" name="ders" required>
+<option value="">Ders seçiniz</option>
+<option value="html">HTML</option>
+<option value="python">Python</option>
+<option value="java">Java</option>
+<option value="csharp">C#</option>
+<option value="sql">SQL</option>
+</select>
+</p>
+<p>
+<label for="ders-zamani">Tercih Edilen Ders Zamanı</label>
+<select id="ders-zamani" name="ders-zamani">
+<option value="">Seçiniz</option>
+<option value="sabah">Sabah</option>
+<option value="ogle">Öğle</option>
+<option value="aksam">Akşam</option>
+</select>
+</p>
+<p>
+<label for="amac">Dersi Öğrenme Amacınız</label>
+<input
+type="text"
+id="amac"
+name="amac">
+</p>
+</fieldset>
+<fieldset>
+<legend>Deneyim Düzeyi *</legend>
+<p>
+<input
+type="radio"
+id="baslangic"
+name="deneyim"
+value="baslangic"
+required>
+<label for="baslangic">Başlangıç</label>
+</p>
+<p>
+<input
+type="radio"
+id="orta"
+name="deneyim"
+value="orta">
+<label for="orta">Orta</label>
+</p>
+<p>
+<input
+type="radio"
+id="ileri"
+name="deneyim"
+value="ileri">
+<label for="ileri">İleri</label>
+</p>
+</fieldset>
+<fieldset>
+<legend>Ek Bilgiler</legend>
+<p>
+<label for="kaynak">Bu kursu nereden duydunuz?</label>
+<select id="kaynak" name="kaynak">
+<option value="">Seçiniz</option>
+<option value="arkadas">Arkadaş</option>
+<option value="internet">İnternet</option>
+<option value="sosyal-medya">Sosyal Medya</option>
+<option value="okul">Okul</option>
+<option value="diger">Diğer</option>
+</select>
+</p>
+<p>
+<label for="hedef">Kısa Hedefiniz</label>
+<input
+type="text"
+id="hedef"
+name="hedef">
+</p>
+</fieldset>
+<fieldset>
+<legend>Mesaj</legend>
+<p>
+</p>
+<p>
+<label for="mesaj">Mesajınız *</label>
+<textarea
+id="mesaj"
+name="mesaj"
+rows="7"
+cols="50"
+required></textarea>
+</p>
+</fieldset>
+<fieldset>
+<legend>KVKK Onayı</legend>
+<p>
+<input
+type="checkbox"
+id="kvkk"
+name="kvkk"
+value="onay"
+required>
+<label for="kvkk">
+</label>
+Kişisel verilerimin işlenmesini kabul ediyorum. *
+</p>
+</fieldset>
+<p>
+<button type="submit">Başvur</button>
+</p>
+</form>
+</body>
+</html>
